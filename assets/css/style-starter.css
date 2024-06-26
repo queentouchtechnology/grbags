@@ -11,6 +11,8 @@ Author URL: http://w3layouts.com
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
+  --logored:#e02026;
+  --logogreen:#12a1a3;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -2767,22 +2769,22 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  background-color: var(--logogreen);
+  border: 1px solid var(--logogreen);
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  background-color: var(--logored);
+  border: 1px solid var(--logored);
   opacity: 0.9;
 }
 
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
-  background-color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  background-color: var(--logored);
+  border: 1px solid var(--logored);
   opacity: 0.9;
   box-shadow: none;
 }
@@ -2793,6 +2795,12 @@ fieldset:disabled a.btn {
   background-color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
+
+    /* Custom CSS for hover dropdown */
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0; /* Remove gap between dropdown and nav item */
+    }
 
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
@@ -3349,14 +3357,14 @@ fieldset:disabled a.btn {
 
 .btn-outline-dark {
   color: var(--blue-color-2);
-  border: 1px solid var(--blue-color-2);
+  border: 1px solid var(--logogreen);
   background: transparent;
 }
 
 .btn-outline-dark:hover {
   color: #fff;
-  background-color: var(--blue-color-2);
-  border: 1px solid var(--blue-color-2);
+  background-color: var(--logored);
+  border: 1px solid var(--logored);
 }
 
 .btn-outline-dark:focus,
@@ -14286,7 +14294,8 @@ a.link-style1 {
   font-weight: 600;
   text-transform: uppercase;
   line-height: 30px;
-  color: var(--blue-color-1);
+  color: var(--logogreen); 
+  /* --blue-color-1 */
   display: inline-block;
   position: relative;
 }
@@ -14523,7 +14532,7 @@ a.navbar-brand img {
 }
 
 .header-w3l .navbar .navbar-brand img {
-  max-width: 140px;
+  max-width: 250px;
   transition: all 0.5s ease;
 }
 
@@ -14540,7 +14549,7 @@ a.navbar-brand img {
 }
 
 .header-w3l .navbar-expand-lg .navbar-nav .nav-item.active .nav-link {
-  color: var(--primary-color);
+  color: var(--logogreen);
   opacity: 1;
 }
 
@@ -14548,14 +14557,14 @@ a.navbar-brand img {
 .header-w3l .navbar-dark .navbar-nav .active>.nav-link,
 .header-w3l .navbar-dark .navbar-nav .nav-link.show,
 .header-w3l .navbar-dark .navbar-nav .nav-link.active {
-  color: var(--primary-color);
+  color: var(--logogreen);
 }
 
 .header-w3l .navbar-light .navbar-nav .show>.nav-link,
 .header-w3l .navbar-light .navbar-nav .active>.nav-link,
 .header-w3l .navbar-light .navbar-nav .nav-link.show,
 .header-w3l .navbar-light .navbar-nav .nav-link.active {
-  color: var(--primary-color);
+  color: var(--logogreen);
 }
 
 .header-w3l .navbar-expand-lg .navbar-nav .nav-link {
@@ -14573,7 +14582,7 @@ a.navbar-brand img {
 }
 
 .header-w3l .navbar-expand-lg .navbar-nav .nav-link:hover {
-  color: var(--primary-color);
+  color: var(--logogreen);
   opacity: 1;
 }
 
