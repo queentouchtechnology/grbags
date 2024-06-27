@@ -1,0 +1,21 @@
+{
+    "name": "gayat/grbags",
+    "description": "A PHP project for GR Bags website",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Gayat\\Grbags\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "QueentouchTechnology",
+            "email": "queentouchtech@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
